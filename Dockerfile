@@ -1,7 +1,6 @@
 FROM alpine:3.10
 
-RUN apt-get -qq -y update \
-	&& apt-get -y --no-install-recommends install \
+RUN apk add --no-cache \
 		qt5-qtbase-dev \
 		qt5-qtdeclarative-dev \
 		qt5-qtwebsockets-dev \
