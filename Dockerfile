@@ -25,8 +25,9 @@ RUN apk add --no-cache \
 		qt5-qtimageformats \
 		qt5-qttranslations \
 		qt5-qtgraphicaleffects \
+		g++ \
 		make
-	
+
 ENV PATH=/usr/lib/qt5/bin:$PATH
 
 VOLUME /build
